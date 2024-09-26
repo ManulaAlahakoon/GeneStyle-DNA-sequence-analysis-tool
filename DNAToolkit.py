@@ -7,4 +7,11 @@ def validateSeq(dna_seq):
             return False
     return tmpseq
 
+def countNucliotideFrequency(seq):
+    tmpFreqDict = {"A":0,"C":0,"G":0,"T":0}
+    for nuc in seq:
+        tmpFreqDict[nuc] += 1
+    return tmpFreqDict
+
+
 
