@@ -1,4 +1,5 @@
 Nucleotides = ["A","C","G","T"]
+DNA_ReversComplement = {'A':'T','T':'A','C':'G','G':'C'}
 
 def validateSeq(dna_seq):
     tmpseq = dna_seq.upper()
@@ -17,4 +18,5 @@ def transcription(seq):
     #DNA -> RNA Transcription
     return seq.replace("T","U")
 
-
+def reverse_complement(seq):
+    return ''.join([DNA_ReversComplement[nuc] for nuc in seq])[::-1]
