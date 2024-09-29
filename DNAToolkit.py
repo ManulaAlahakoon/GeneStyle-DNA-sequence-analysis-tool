@@ -1,5 +1,4 @@
-Nucleotides = ["A","C","G","T"]
-DNA_ReversComplement = {'A':'T','T':'A','C':'G','G':'C'}
+from structures import *
 
 def validateSeq(dna_seq):
     tmpseq = dna_seq.upper()
