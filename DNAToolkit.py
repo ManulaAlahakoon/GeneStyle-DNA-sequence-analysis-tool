@@ -14,8 +14,9 @@ def countNucliotideFrequency(seq):
     return tmpFreqDict
 
 def transcription(seq):
-    #DNA -> RNA Transcription
+    """DNA -> RNA Transcription"""
     return seq.replace("T","U")
 
 def reverse_complement(seq):
+    """Swapping adenine with thymine and guanine with cytosine. Reversing newly generated string"""
     return ''.join([DNA_ReversComplement[nuc] for nuc in seq])[::-1]
