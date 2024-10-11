@@ -7,25 +7,25 @@ colors = {
     'G': '#00FF00',  # Green for G
     'E': '#0000FF',  # Blue for E
     'N': '#FF0000',  # Red for N
-    'S': '#FFFF00',  # Yellow for S
-    'C': '#00FF00',  # Green for C
-    'O': '#0000FF',  # Blue for O
-    'P': '#FF0000',  # Red for P
-    'E_last': '#FFFF00'  # Yellow for last E
+    'E_last': '#FFFF00',  # Yellow for last E
+    'S': '#00FF00',  # Green for S
+    'T': '#0000FF',  # Blue for T
+    'Y': '#FF0000',  # Red for Y
+    'L': '#FFFF00',  # Yellow for L
 }
-
 
 st.markdown(f"<h1 style='text-align:center;'>"
             f"<span style='color:{colors['G']}'>G</span>"
             f"<span style='color:{colors['E']}'>e</span>"
             f"<span style='color:{colors['N']}'>n</span>"
-            f"<span style='color:{colors['S']}'>e</span>"
-            f"<span style='color:{colors['C']}'>S</span>"
-            f"<span style='color:{colors['O']}'>c</span>"
-            f"<span style='color:{colors['P']}'>o</span>"
-            f"<span style='color:{colors['E_last']}'>p</span>"
-            f"<span style='color:{colors['G']}'>e</span></h1>", 
+            f"<span style='color:{colors['E_last']}'>e</span>"
+            f"<span style='color:{colors['S']}'>S</span>"
+            f"<span style='color:{colors['T']}'>t</span>"
+            f"<span style='color:{colors['Y']}'>y</span>"
+            f"<span style='color:{colors['L']}'>l</span>"
+            f"<span style='color:{colors['E_last']}'>e</span></h1>", 
             unsafe_allow_html=True)
+
 
 st.markdown("<h3 style='text-align:center; font-size:14px;'>DNA sequence analysis tool</h3>", unsafe_allow_html=True)
 st.markdown('<hr>', unsafe_allow_html=True)
@@ -82,6 +82,12 @@ elif validatedDNAStr == False:
 
 st.button('Random', on_click=randomBtn, key=2) 
 st.caption("Textfield should be empty to generate random DNA sequence")
+
+
+st.markdown('<hr>', unsafe_allow_html=True)
+st.markdown("<p style='text-align:center; font-size:14px; '>Created by: <a style='text-decoration: none;' href='https://www.linkedin.com/in/manula-alahakoon-925843273/' target='_blank'>Manula Alahakoon</a></p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align:center; font-size:14px;'>2024 October</p>", unsafe_allow_html=True)
+st.markdown('<hr>', unsafe_allow_html=True)
 
 # from DNAToolkit import *
 # from utilities import colored
